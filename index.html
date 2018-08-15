@@ -26,7 +26,6 @@ header {
 nav {
     float: left;
     width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
 }
@@ -42,7 +41,6 @@ article {
     padding: 20px;
     width: 70%;
     background-color: #f1f1f1;
-    /* height: 300px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -82,19 +80,21 @@ footer {
 <section>
   <nav>
     <ul>
+      <p>Link to Full Report:</p>
+      <li><a href="https://tgsully.github.io/Hands-Free-Computer-Mouse-Interface/"> Hands Free Computer Mouse Interface </a></li><br>
+      <p>Link to Full Report:</p>
       <li><a href="https://tgsully.github.io/Synth-esthesia/"> Synth-esthesia </a></li>
-      <li><a href="https://tgsully.github.io/Hands-Free-Computer-Mouse-Interface/"> Hands Free Computer Mouse Interface </a></li>
     </ul>
   </nav>
   
   <article>
     <h2>Hands Free Computer Mouse Interface</h2>
-    <p>Objectives</p>
+    <h1><p>Objectives</p></h1>
        <p> Mobility is an aspect of life that most people take for granted.  What if you had limited to no movement of your hands and/or arms?  How would you manipulate the mouse efficiently?  This research project aims at solving this dilemma of a hands free computer mouse.  This project must satisfy the following criteria:
         Tracking the movement of the user’s head. These movements are translated in to HID mouse commands.  Wireless transmissions of these commands anre sent to host computer. Lastly, there will be no external buttons needed for operation.
          </p>  
         
-        <p>General Description</p>
+         <h1><p>General Description</p></h1>
         <p> In order to achieve a completely hands free device, the movement of the head will be utilized.  Tilting the head in certain directions will trigger appropriate HID mouse commands and cursor movement.  The orientation of the head will be sensed by the MPU6050 9-degrees-of-freedom accelerometer and gyroscope.  A Texas Instruments   
             MSP430G2553 microcontroller interprets the accelerometers data.  Finally the appropriate HID mouse command and movement data transmits to the computer via Bluetooth.    
              The MPU6050 will control the up, down, left, and right movements of the cursor.  This is 
@@ -102,19 +102,19 @@ footer {
             hands free and does not require external buttons.  This is important to the simplicity of the users input.
             </p>
         
-        <p>What I Learned</p>
+            <h1><p>What I Learned</p></h1>
         <p>When mobility is hindered, finding an elegant solution to simple problems can be challenging.  Multipurpose movements such as the dwell clicking threshold were essential in the formulation of this solution.  The positive implementations of this device are endless. The most obvious of potential users would be paraplegic and amputees.  However there are many more degenerative diseases, such as ALS and Parkinson’s, in which the users could utilize the features.  Simple point and click games and/or communication devices can also be controlled with this device.
         </p>
     
     
     <h2>Synth-esthesia</h2>
-    <p>Introduction</p>
+    <h1><p>Introduction</p></h1>
        <p> Synesthesia is a neurological phenomenon where different sensory pathways activate simultaneously.  An example of this is when someone interprets numbers as colors, letters as colors or colors as musical tones.  Musician Jimi Hendrix reported experiencing synesthesia symptoms when playing guitar.  The main objective of this project is to translate colors into musical tones.  </p>  
         
-        <p>Theory of Operation</p>
+       <h1><p>Theory of Operation</p></h1>
         <p> In order to interpret colors as audible tones, we must look at the nature of these two ingredients.  Colors can be expressed as a wavelengths ranging from the smallest, red’s wavelength, to the largest, violet’s wavelength.  Tones are represented by wavelengths as well.  Since both can be represented by waves, we can translate color waves to specific audible pitch waves.  A bit of musical theory is needed for the division of notes to colors.  Since there are seven notes in a major scale, we need seven distinct colors.  Luckily there are seven colors in the color palette; Red, orange, yellow, green, teal, blue, and violet.  So the mapping is as follows; Red (1st note), Orange (2nd note), yellow (3rd note), green (4th note), teal (5th note), blue (6th note), violet (7th note).</p>
         
-        <p>General Description</p>
+        <h1><p>General Description</p></h1>
         <p> The project requires the implementation of a color sensor, microcontroller, three buttons, LEDs and a speaker.  The microcontroller will read the Red, Green, and Blue values from the color sensor.  These values are then translated into a specific colors.  Finally this color is then translated into a musical pitch.  This pitch will be outputted through the speaker attached to the microcontroller.  The objective is the ability to perceive color sequences as musical tone sequences.  One will be able to hear their favorite painting and see what their favorite melodies look like.
         </p>
   </article>
